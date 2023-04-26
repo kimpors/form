@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title></title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link href="style.css" rel="stylesheet" />
+  </head>
+  <body>
+    <header>
+      <nav>
+        <h1>Форми</h1>
+
+        <a href="/index.html">Math</a>
+        <a href="/login.html">Login</a>
+        <a href="/test.html">Test</a>
+      </nav>
+    </header>
+    <main>
+      <form id="test">
+        <h2>Тест</h2>
+
+        <p>
+          <label for="q1">Завдання 1</label>
+          <br />
+          <input type="checkbox" name="q1" checked /> Відповідь 1
+          <br />
+          <input type="checkbox" name="q1" /> Відповідь 2
+          <br />
+          <input type="checkbox" name="q1" /> Відповідь 3
+        </p>
+        <p>
+          <label for="q2">Завдання 2</label>
+          <br />
+          <input type="radio" name="q1" checked /> Відповідь 1
+          <br />
+          <input type="radio" name="q1" /> Відповідь 2
+          <br />
+          <input type="radio" name="q1" /> Відповідь 3
+        </p>
+        <p>
+          <label for="q3">Завдання 3</label>
+          <br />
+          <select>
+            <option selected>Відповідь 1</option>
+            <option>Відповідь 2</option>
+            <option>Відповідь 3</option>
+          </select>
+        </p>
+
+        <p>
+          <label for="q4">Завдання 4</label>
+          <br />
+          <textarea rows="7" cols="40" wrap="virtual"></textarea>
+          <br />
+          <input type="file" />
+        </p>
+        <button type="submit">Відправити</button>
+      </form>
+      <section id="result"></section>
+    </main>
+
+    <script src="script.js"></script>
+  </body>
+</html>

@@ -7,29 +7,38 @@
     <link rel="stylesheet" type="text/css" href="style.css" />
   </head>
   <body>
-    <h1>Форми</h1>
+    <header>
+      <nav>
+        <h1>Форми</h1>
 
-    <form id="solve">
-      <h2>Квадратичне рівняння</h2>
+        <a href="/index.html">Math</a>
+        <a href="/login.html">Login</a>
+        <a href="/test.html">Test</a>
+      </nav>
+    </header>
+    <main>
+      <form id="math">
+        <h2>Квадратичне рівняння</h2>
 
-      <p>
-        <label for="A">A</label>
-        <br />
-        <input id="a" type="number" name="A" placeholder="1" required />
-      </p>
-      <p>
-        <label for="B">B</label>
-        <br />
-        <input id="b" type="number" name="B" placeholder="2" required />
-      </p>
-      <p>
-        <label for="C">C</label>
-        <br />
-        <input id="c" type="number" name="C" placeholder="2" required />
-      </p>
-      <button id="btn" type="submit" onclick="scroll(result);">Вирішити</button>
-    </form>
-    <section id="result"></section>
+        <p>
+          <label for="A">A</label>
+          <br />
+          <input id="a" type="number" name="A" placeholder="1" required />
+        </p>
+        <p>
+          <label for="B">B</label>
+          <br />
+          <input id="b" type="number" name="B" placeholder="2" required />
+        </p>
+        <p>
+          <label for="C">C</label>
+          <br />
+          <input id="c" type="number" name="C" placeholder="3" required />
+        </p>
+        <button type="submit">Вирішити</button>
+      </form>
+      <section id="result"></section>
+    </main>
 
     <script src="script.js"></script>
   </body>
