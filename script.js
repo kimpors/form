@@ -18,24 +18,24 @@ function solve() {
     const x = (-b / (2 * a)).toPrecision(3);
     solve = "X: " + x;
   } else {
-    solve = "Коренів немає";
+    solve = "Root don't exist";
   }
 
-  result.innerHTML = "<h2>Результат</h2> <p>" + solve + "</p>";
+  result.innerHTML = "<h2>Result</h2> <p>" + solve + "</p>";
 }
 
 function login() {
   const nickname = form.elements["nickname"].value;
   const password = form.elements["password"].value;
   if (nickname == "admin" && password == "admin") {
-    result.innerHTML = "<h2>Вірний логін</h2>";
+    result.innerHTML = "<h2>Success</h2>";
   } else {
-    result.innerHTML = "<h2>Невірний логін</h2>";
+    result.innerHTML = "<h2>Wrong login or password</h2>";
   }
 }
 
 function send() {
-  result.innerHTML = "<h2>Результат</h2>";
+  result.innerHTML = "<h2>Result</h2>";
 }
 
 form.addEventListener("submit", (event) => {
