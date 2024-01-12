@@ -2,6 +2,14 @@
   --primary-color: hsl(220, 50%, 90%);
   --secondary-color: hsl(220, 40%, 40%);
   --acsent-color: hsl(220, 80%, 30%);
+  --input-text: black;
+}
+
+[data-theme='dark'] {
+  --primary-color: hsl(220, 50%, 20%);
+  --secondary-color: hsl(220, 40%, 60%);
+  --acsent-color: hsl(220, 80%, 80%);
+  --input-text: gray;
 }
 
 html {
@@ -62,7 +70,7 @@ form input,
 form select,
 form textarea {
   font-size: 1rem;
-  color: black;
+  color: var(--input-text);
   background: var(--primary-color);
   padding: 0.3rem;
 }
@@ -84,7 +92,7 @@ select:hover,
 textarea:focus,
 button:focus,
 input:focus {
-  color: black;
+  color: var(--input-text);
   transform: translate(5px, 5px);
   box-shadow: none;
 }

@@ -1,9 +1,8 @@
 import type { Metadata } from 'next'
-import { Inter } from 'next/font/google'
 import Nav from './components/Nav/Nav'
+import ThemeChanger from './components/ThemeChanger/ThemeChanger'
+import App from './components/App'
 import './style.css'
-
-const inter = Inter({ subsets: ['latin'] })
 
 export const metadata: Metadata = {
   title: 'Form',
@@ -17,9 +16,12 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body className={inter.className}>
-        <Nav />
-        { children }
+      <body>
+        <App>
+          <ThemeChanger />
+          <Nav />
+          { children }
+        </App>
       </body>
     </html>
   )
