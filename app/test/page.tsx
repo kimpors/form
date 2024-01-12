@@ -19,18 +19,6 @@ const Test = () =>
 
         <p>
           <label>Question 1</label>
-          <input type="checkbox" checked /> Answer 1
-          <input type="checkbox" /> Answer 2
-          <input type="checkbox" /> Answer 3
-        </p>
-        <p>
-          <label>Question 2</label>
-          <input type="radio" checked /> Answer 1
-          <input type="radio" /> Answer 2
-          <input type="radio" /> Answer 3
-        </p>
-        <p>
-          <label>Question 3</label>
           <select>
             <option selected>Answer 1</option>
             <option>Answer 2</option>
@@ -39,9 +27,9 @@ const Test = () =>
         </p>
 
         <p>
-          <label>Question 4</label>
+          <label>Question 2</label>
           <textarea rows={ 7 } cols={ 40 } wrap="virtual"></textarea>
-          <input type="file" />
+          <input type="file" accept='.txt' />
         </p>
         <button type="submit">Send</button>
       </form>

@@ -31,8 +31,6 @@ const Home = () =>
 
   return(
     <article>
-      <h1>Math</h1>
-
       <form onSubmit={ solve }>
         <h2>Quadratic equation</h2>
 

@@ -1,6 +1,7 @@
 'use client'
  
 import { usePathname } from 'next/navigation'
+import styles from  './styles.module.css'
 import Link from 'next/link'
  
 const Nav = () =>
@@ -8,24 +9,16 @@ const Nav = () =>
   const pathname = usePathname()
 
   return(
-    <nav>
-      <ul>
-        <li>
-          <Link className={`link ${pathname === '/' ? 'active' : ''}`} href="/">
-            Math
-          </Link>
-        </li>
-        <li>
-          <Link className={`link ${pathname === '/login' ? 'active' : ''}`} href="/login">
-            Login
-          </Link>
-        </li>
-        <li>
-          <Link className={`link ${pathname === '/test' ? 'active' : ''}`} href="/test">
-            Test
-          </Link>
-        </li>
-      </ul>
+    <nav className={ styles.nav }>
+      <Link className={ pathname === '/' ? styles.active : '' } href="/">
+        Math
+      </Link>
+      <Link className={ pathname === '/login' ? styles.active : '' } href="/login">
+        Login
+      </Link>
+      <Link className={ pathname === '/test' ? styles.active : '' } href="/test">
+        Test
+      </Link>
     </nav>
   )
 }

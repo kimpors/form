@@ -1,0 +1,85 @@
+:root {
+  --primary-color: hsl(220, 50%, 90%);
+  --secondary-color: hsl(220, 40%, 40%);
+  --acsent-color: hsl(220, 80%, 30%);
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-size: 24px;
+  padding-top: 2rem;
+  color: var(--secondary-color);
+  background: var(--primary-color);
+}
+
+a {
+  text-decoration: none;
+  color: var(--primary-color);
+}
+
+form {
+  display: grid;
+  place-items: center;
+}
+
+form label {
+  color: var(--primary-color);
+}
+
+p {
+  display: flex;
+  flex-direction: column;
+}
+
+p,
+form {
+  padding: 2rem;
+  background: var(--secondary-color);
+  color: var(--primary-color);
+}
+
+
+
+form input,
+form select,
+form textarea {
+  font-size: 1rem;
+  width: 10rem;
+  padding: 0.3rem;
+  background: var(--primary-color);
+  color: black;
+  border: none;
+  border-radius: 0.3rem;
+  box-shadow: 5px 5px 5px black;
+  transition: transform 150ms;
+}
+
+form button {
+  font-size: 1.5rem;
+  width: 10rem;
+  color: var(--acsent-color);
+  background: var(--primary-color);
+  border: none;
+  border-radius: 0.3rem;
+  box-shadow: 5px 5px 5px black;
+  cursor: pointer;
+  margin-top: 1rem;
+  margin-bottom: 2rem;
+  transition: transform 150ms;
+}
+
+form textarea:focus {
+  margin-bottom: 10px;
+}
+
+button:focus,
+select:focus,
+textarea:focus,
+input:focus {
+  color: black;
+  transform: translate(5px, 5px);
+  box-shadow: none;
+}
