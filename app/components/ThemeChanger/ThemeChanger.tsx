@@ -29,11 +29,12 @@ const ThemeChanger = () =>
     <section className={ styles.changer }>
       <Image 
         className={ isLight ? styles.light : styles.dark }
-        src = "/lightbulb-solid.svg"
-        width = { 42 }
-        height = { 42 }
+        src = "./lightbulb.png"
+        width = { 28 }
+        height = { 38 }
         alt = "Lightbulb"
         onClick={ () => changeTheme() }
+        unoptimized
       />
     </section>
   )
