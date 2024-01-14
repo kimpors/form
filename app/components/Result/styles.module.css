@@ -1,0 +1,12 @@
+.result {
+  text-align: center;
+}
+
+.result h2 {
+  padding: .5rem;
+}
+
+.result > p {
+  text-decoration: underline;
+  font-weight: bold;
+}

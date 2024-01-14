@@ -1,6 +1,7 @@
 'use client'
 
 import { FormEvent, useState } from 'react'
+import Result from './components/Result/Result'
 
 const Home = () => 
 {
@@ -30,27 +31,29 @@ const Home = () =>
   }
 
   return(
-    <article>
-      <form onSubmit={ solve }>
-        <h2>Quadratic equation</h2>
+    <main role="main">
+      <article>
+        <form onSubmit={ solve }>
+          <h2>Quadratic equation</h2>
 
-        <p>
-          <label>A</label>
-          <input type="number" required value={ a } onChange={ (e) => setA(e.target.valueAsNumber) } />
-        </p>
-        <p>
-          <label>B</label>
-          <input type="number" required value={ b } onChange={ (e) => setB(e.target.valueAsNumber) }/>
-        </p>
-        <p>
-          <label>C</label>
-          <input type="number" required value={ c } onChange={ (e) => setC(e.target.valueAsNumber) } />
-        </p>
-        <button type="submit">Solve</button>
-      </form>
+          <p>
+            <label>A</label>
+            <input type="number" required value={ a } onChange={ (e) => setA(e.target.valueAsNumber) } />
+          </p>
+          <p>
+            <label>B</label>
+            <input type="number" required value={ b } onChange={ (e) => setB(e.target.valueAsNumber) }/>
+          </p>
+          <p>
+            <label>C</label>
+            <input type="number" required value={ c } onChange={ (e) => setC(e.target.valueAsNumber) } />
+          </p>
+          <button type="submit">Solve</button>
+        </form>
+      </article>
 
-      <section>{ result }</section>
-    </article>
+      <Result result={ result } condition={ result !== '' }/>
+    </main>
   )
 }
 

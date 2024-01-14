@@ -48,11 +48,14 @@ p {
   flex-direction: column;
 }
 
+article {
+  color: var(--primary-color);
+  background: var(--secondary-color);
+}
+
 p,
 form {
   padding: 2rem;
-  background: var(--secondary-color);
-  color: var(--primary-color);
 }
 
 form input,
